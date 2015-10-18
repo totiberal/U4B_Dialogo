@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".U4b_VentasDialogo"
+    tools:showIn="@layout/activity_u4b__ventas_dialogo">
+
+    <Button
+        android:id="@+id/btnChamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadro de Dialogo"
+        android:layout_centerInParent="true"
+        android:onClick="btnOnClick"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnChamar"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/verContido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:saveEnabled="true"
+            android:freezesText="true"/>
+    </ScrollView>
+</RelativeLayout>
